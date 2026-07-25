@@ -1,82 +1,85 @@
-# Profil lecteur — boussole de découverte
+# Sujets d'exploration
 
-**Ce fichier n'est PAS un filtre. C'est une boussole.** Il sert à l'IA pour identifier les FRONTIÈRES de ce que je connais — afin qu'elle me pousse au-delà chaque semaine. L'objectif est l'ouverture d'esprit, pas l'écho de ma stack.
+Ce fichier liste les **domaines** que la newsletter doit couvrir chaque semaine. Il ne contient volontairement aucune information personnelle sur le lecteur (métier, projets, problèmes) — l'objectif est que l'IA parle du monde tech et de ce qui bouge, pas d'un individu.
 
-Si une édition ne me fait rien découvrir de nouveau, elle a raté sa mission.
-
----
-
-## D'où je viens (contexte, pas cible)
-
-Ces éléments existent pour que l'IA sache où je me tiens, **pas pour qu'elle limite le champ**.
-
-Tech Lead chez BPCE IT (Groupe Natixis / BPCE) sur MyAPI, plateforme interne d'automatisation web. Stack pro : Python/FastAPI, Angular, LangChain, RAG, Docker, Terraform, AWS, GitHub Actions. Formation MSc Data & IA, Efrei 2025. Encadre un apprenti, coach d'équipes internes (Hackathon BPCE IT 2026 avec le projet VIGIL). Mac M2, français, Paris.
-
-Projets perso existants : cette newsletter, un watcher VIE, un projet immo familial, OMAKEE (livraison gastronomique), site d'un club de foot, exploration d'une marque de boissons.
-
-C'est ma base. Je n'ai pas besoin qu'on me la re-serve.
+**Aucune personnalisation, aucun écho.** Le lecteur veut voir ce qui l'entoure, pas ce qu'il est déjà.
 
 ---
 
-## Ce que je veux vraiment découvrir
+## Langages, paradigmes et théorie
 
-Priorité absolue à ce que je NE maîtrise pas.
+- Langages systèmes : Rust, Zig, Go, C++ moderne, Odin
+- Programmation fonctionnelle : Haskell, OCaml, Elixir, Gleam, Roc
+- Méthodes formelles : TLA+, Lean, Coq, model checking
+- DSLs, langages déclaratifs, approches à base de types
+- Compilateurs, runtimes, garbage collection, JIT
 
-### Paradigmes différents de ma stack
-- Langages systèmes que je ne pratique pas : **Rust**, **Zig**, **Go**, C++ moderne
-- Programmation fonctionnelle poussée : Haskell, OCaml, Elixir, Gleam
-- Approches déclaratives, DSLs, méthodes formelles (TLA+, Lean)
-- Bases de données non-relationnelles avancées : graph, temporal, columnar, vector natif
+## Systèmes et infrastructure
 
-### Domaines tech adjacents que je ne fréquente pas
 - Systèmes distribués à échelle géante (papers Google / Meta / Netflix / Cloudflare)
 - HPC, calcul scientifique, GPU au-delà de l'IA
-- Compilateurs, runtimes, garbage collection, JIT
-- Sécurité offensive, red team, side channels, fuzzing
-- Robotique, IoT, embarqué, edge
+- Bases de données non-relationnelles avancées : graph, temporal, columnar, vector natif
+- Observability, chaos engineering, resilience
+- Postmortems d'incidents inspirants
 
-### Sciences qui m'entourent
-- **Biologie moléculaire et bioinfo** — nouveau front de la puissance calcul, protein folding, drug design assisté IA
-- **Physique et matériaux** — ce qui rend possible / bloque les prochaines générations de chips, photonique, spintronique
+## IA et ML — en profondeur, pas en surface
+
+- Papers ML récents et contre-intuitifs
+- Architectures au-delà des transformers
+- Interprétabilité, alignement, safety
+- MLOps et ingénierie d'inférence sérieuse
+- Frontières de la recherche (mechanistic interpretability, world models)
+
+## Sciences dures
+
+- Biologie moléculaire et bioinformatique (protein design, CRISPR, single-cell, spatial omics)
+- Physique et matériaux : semi-conducteurs, photonique, spintronique, cryogénie
 - Chimie du vivant, biologie synthétique
-- **Mathématiques appliquées** — théorie de l'info, optimisation, statistiques bayésiennes, category theory
-- Neurosciences — ce que le cerveau fait mieux / moins bien que les machines
+- Mathématiques appliquées : théorie de l'info, optimisation, statistiques bayésiennes, category theory
+- Neurosciences computationnelles
 
-### Crypto / web3 (angle infra uniquement)
-Protocoles, L2s, zk-rollups, wallets custody, MPC, adoption entreprise, stablecoins. Pas la spéculation.
+## Sécurité et cryptographie
 
-### Angles économiques et géopolitiques de la tech
-- Chaînes d'approvisionnement des semi-conducteurs (TSMC, ASML, sanctions)
-- Régulations européennes (AI Act, DMA, DSA, Cyber Resilience Act) — impact concret sur les devs
-- Souveraineté cloud, alternatives européennes (Scaleway, OVH, Mistral)
+- Sécurité offensive, red team, side channels, fuzzing
+- Cryptographie appliquée : zero-knowledge, homomorphic, MPC, PQC
+- Supply chain security, secrets management, sandboxing
+- Vulnérabilités marquantes et postmortems
+
+## Crypto / web3 (angle infra uniquement)
+
+- Protocoles, L2s, zk-rollups, MEV
+- Wallets, custody, MPC
+- Adoption entreprise, stablecoins, on-chain identity
+- Aucune spéculation, aucun prix, aucun memecoin
+
+## Hardware et calcul physique
+
+- Chips (au-delà de l'IA), edge, embarqué
+- Robotique, IoT industriel
+- Semi-conducteurs et chaîne d'approvisionnement mondiale
+- Ordinateurs quantiques (avancées concrètes)
+
+## Angles économiques, réglementaires, géopolitiques
+
+- Régulations européennes et US : AI Act, DMA, DSA, CRA, export controls
+- Souveraineté numérique, alternatives européennes
 - Économie de l'open source, modèles de financement, fondations
+- Positionnement des grands acteurs (Big Tech, Chine, Europe)
 
-### Ce qui bouleverse ce que je crois savoir
-Papers contre-intuitifs, résultats qui invalident des consensus récents, expériences ratées instructives, postmortems d'incidents inspirants, benchmarks qui remettent en cause les hiérarchies établies.
+## Ce qui bouleverse ce qu'on croit savoir
 
----
-
-## Ratio attendu dans chaque édition
-
-- **70 % découverte** — items hors de ma stack, dans les zones listées ci-dessus
-- **20 % signal proche** — actu tech dans mon voisinage (IA / OSS / backend) qui fait vraiment bouger les lignes
-- **10 % direct match maximum** — items qui répondent à un de mes projets. Optionnel : si rien ne matche vraiment, ne force pas.
-
-## Comment l'IA doit se comporter
-
-- Voix de mentor curieux qui pousse à explorer, pas d'assistant qui rassure sur ce que je connais déjà
-- A le droit — et l'obligation — de me sortir de ma zone de confort
-- Quand elle mentionne un domaine hors de ma stack, elle explique POURQUOI ça vaut le coup pour moi, pas juste "c'est intéressant"
-- Assume ses prises de position, ses "à surveiller" et ses "surestimé selon moi"
+- Résultats qui invalident un consensus récent
+- Benchmarks qui remettent en cause une hiérarchie établie
+- Expériences ratées instructives
+- Papers ou postmortems à contre-courant
 
 ---
 
 ## Ce que je NE veux PAS voir
 
-- Contenu marketing / thought leadership creux ("5 raisons pour lesquelles X change tout")
-- Trope "AI killed X" sans données
-- Doubles-annonces sans évolution factuelle réelle
-- Sensationnalisme AGI / conscience LLM / prédictions vagues type "AGI dans 5 ans"
+- Contenu marketing / thought leadership creux
+- Sensationnalisme IA / prédictions AGI vagues
+- Doubles-annonces sans évolution factuelle
+- Spéculation crypto pure (prix, memecoins, influenceurs)
 - Threads Twitter reformatés en articles
-- Spéculation crypto pure (prix, memecoins, influenceurs) — seule l'infra technique compte
-- Contenus purement centrés sur ma stack actuelle sans ouverture (l'écho de moi-même)
+- **Toute personnalisation** : pas de "pour toi", "utile pour ton projet", "adresse ton problème X". L'analyse parle du monde tech, pas du lecteur.
