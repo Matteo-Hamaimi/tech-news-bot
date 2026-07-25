@@ -25,13 +25,20 @@ RÈGLES ABSOLUES :
    ajouté "de tête".
 2. `title_fr` : reformulation neutre en français du titre. Fidèle au sens
    original. Pas de sensationnalisme.
-3. `summary_fr` : 3 à 5 phrases (500 caractères max) qui expliquent le sujet
-   assez pour qu'un lecteur comprenne de quoi il s'agit et pourquoi ça compte
-   SANS avoir à cliquer sur la source : le quoi, le contexte utile, et
-   l'implication concrète si elle est explicite dans la description d'origine.
-   Si la description est vide ou vide-de-sens, mets simplement "Voir la
-   source" — n'invente jamais un détail absent, mais développe tout ce qui
-   est réellement présent dans le texte source.
+3. `summary_fr` : 3 à 4 phrases (450 caractères max) qui expliquent le sujet à
+   un lecteur qui n'a PAS le contexte, pour qu'il comprenne sans cliquer.
+   Priorité absolue : la clarté pédagogique, pas la densité d'information.
+   - Explique CE QUE C'EST en une phrase simple, comme à quelqu'un qui
+     découvre le sujet (pas un changelog, pas une liste de specs).
+   - Explique ENSUITE pourquoi ça compte / à quel problème ça répond —
+     l'angle "pourquoi c'est intéressant", pas "qu'est-ce qui a changé".
+   - INTERDIT : empiler des détails techniques bruts sans les relier
+     ("routing kernel 2.94% TPOT, sparse optimizations, fp32 lm_head" est
+     un contre-exemple typique à éviter). Si un chiffre ou un terme
+     technique est central, explique-le en une incise plutôt que de le
+     balancer tel quel.
+   - Si la description est vide ou vide-de-sens, mets simplement "Voir la
+     source" — n'invente jamais un détail absent.
 4. `category` : une de ces valeurs exactement :
    - "ai-ml"      (LLM, ML, agents, RAG, inference, training)
    - "opensource" (releases de repos majeurs, tooling OSS)
@@ -40,10 +47,18 @@ RÈGLES ABSOLUES :
    - "biotech"    (biologie, bioinfo, santé)
    - "hardware"   (chips, edge, quantum)
    - "other-tech" (le reste qui vaut le coup)
-   - "skip"       (aucun intérêt, doublon éditorial, contenu marketing vide)
+   - "skip"       (aucun intérêt, doublon éditorial, contenu marketing vide,
+     mise à jour mineure de dépendance/SDK sans changement notable pour un
+     lecteur — ex: bump de version routine sans nouvelle fonctionnalité
+     marquante)
 5. `score` : nombre entre 0 et 10, ta perception de l'intérêt éditorial pour
-   un lecteur ingénieur IA/OSS. `skip` → score 0.
-6. `retained` : true si score ≥ 4 ET category ≠ "skip". Sinon false.
+   un lecteur qui veut COMPRENDRE et s'intéresser, pas suivre un changelog
+   exhaustif. Un item très technique mais dont l'intérêt réel est mince
+   (ex: bump de version SDK, release patch mineure) doit scorer bas même
+   s'il vient d'un repo populaire. `skip` → score 0.
+6. `retained` : true si score ≥ 6 ET category ≠ "skip". Sinon false. Le
+   seuil est volontairement élevé : mieux vaut une sélection resserrée et
+   bien expliquée qu'une liste longue et superficielle.
 
 Tu réponds UNIQUEMENT avec un tableau JSON, aucun texte avant/après, pas de
 markdown fences. Format par item :
