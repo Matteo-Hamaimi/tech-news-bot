@@ -29,8 +29,8 @@ from .prompts import (
 
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-MODEL_NORMALIZE = "claude-haiku-4-5"
-MODEL_ANALYZE = "claude-sonnet-4-6"
+MODEL_NORMALIZE = "claude-haiku-4-5-20251001"
+MODEL_ANALYZE = "claude-sonnet-5"
 
 
 def _extract_json(text: str) -> Any:
@@ -60,7 +60,6 @@ def normalize_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         resp = client.messages.create(
             model=MODEL_NORMALIZE,
             max_tokens=4000,
-            temperature=0,
             system=NORMALIZE_SYSTEM,
             messages=[{"role": "user", "content": user}],
         )
@@ -88,7 +87,6 @@ def write_analysis(retained_items: list[dict[str, Any]], memory_context: str,
     resp = client.messages.create(
         model=MODEL_ANALYZE,
         max_tokens=2000,
-        temperature=0.4,
         system=ANALYSIS_SYSTEM,
         messages=[{"role": "user", "content": user}],
     )
@@ -104,7 +102,6 @@ def extract_themes(retained_items: list[dict[str, Any]], analysis: str) -> list[
     resp = client.messages.create(
         model=MODEL_NORMALIZE,
         max_tokens=500,
-        temperature=0,
         system=THEMES_SYSTEM,
         messages=[{"role": "user", "content": user}],
     )

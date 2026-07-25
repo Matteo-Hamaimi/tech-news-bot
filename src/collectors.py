@@ -123,7 +123,7 @@ def collect_github_releases(token: str) -> list[dict[str, Any]]:
                         continue
                     body = (rel.get("body") or "").strip()
                     # On tronque le body — il peut être énorme, l'IA n'a pas besoin de tout
-                    body_short = body[:800]
+                    body_short = body[:2000]
                     items.append({
                         "source": "github",
                         "url": rel["html_url"],
@@ -164,7 +164,7 @@ def collect_hn(_token: str) -> list[dict[str, Any]]:
                         "source": "hn",
                         "url": url,
                         "title": hit.get("title", "").strip(),
-                        "description": (hit.get("story_text") or "")[:500],
+                        "description": (hit.get("story_text") or "")[:1500],
                         "published_at": hit.get("created_at", ""),
                         "signals": {
                             "points": hit.get("points", 0),
@@ -199,7 +199,7 @@ def collect_rss() -> list[dict[str, Any]]:
                 else:
                     published_iso = ""
 
-                summary = (entry.get("summary", "") or entry.get("description", ""))[:500]
+                summary = (entry.get("summary", "") or entry.get("description", ""))[:1500]
                 # Retire le HTML basique
                 import re
                 summary = re.sub(r"<[^>]+>", "", summary).strip()

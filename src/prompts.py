@@ -25,9 +25,13 @@ RÈGLES ABSOLUES :
    ajouté "de tête".
 2. `title_fr` : reformulation neutre en français du titre. Fidèle au sens
    original. Pas de sensationnalisme.
-3. `summary_fr` : 1 à 2 phrases (150 caractères max) qui synthétisent ce que
-   dit la description. Si la description est vide ou vide-de-sens, mets
-   simplement "Voir la source" — n'invente jamais.
+3. `summary_fr` : 3 à 5 phrases (500 caractères max) qui expliquent le sujet
+   assez pour qu'un lecteur comprenne de quoi il s'agit et pourquoi ça compte
+   SANS avoir à cliquer sur la source : le quoi, le contexte utile, et
+   l'implication concrète si elle est explicite dans la description d'origine.
+   Si la description est vide ou vide-de-sens, mets simplement "Voir la
+   source" — n'invente jamais un détail absent, mais développe tout ce qui
+   est réellement présent dans le texte source.
 4. `category` : une de ces valeurs exactement :
    - "ai-ml"      (LLM, ML, agents, RAG, inference, training)
    - "opensource" (releases de repos majeurs, tooling OSS)
@@ -57,7 +61,7 @@ def build_normalize_user(items: list[dict[str, Any]]) -> str:
             "id": it["id"],
             "source": it["source"],
             "title": it["title"],
-            "description": it.get("description", "")[:600],
+            "description": it.get("description", "")[:1500],
             "signals": it.get("signals", {}),
         }
         for it in items

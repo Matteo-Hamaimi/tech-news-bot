@@ -14,9 +14,9 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from . import collectors, email_send, llm, memory, template
-
 load_dotenv()
+
+from . import collectors, email_send, llm, memory, template
 
 PROFILE_PATH = Path(__file__).parent.parent / "profile.md"
 ARCHIVE_DIR = Path(__file__).parent.parent / "archives"
