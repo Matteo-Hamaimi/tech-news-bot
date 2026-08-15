@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Newsletter tech — 2026-W33 — Inférence locale : Qwen3.8 27B et modèles denses remplacent l'appel API</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f6f4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a1a;">
+<div style="max-width:640px;margin:0 auto;padding:32px 20px;background:#ffffff;">
+
+  <div style="border-bottom:2px solid #1a1a1a;padding-bottom:12px;margin-bottom:24px;">
+    <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#888;">Newsletter tech · 2026-W33</div>
+    <h1 style="font-size:26px;margin:6px 0 0;font-weight:700;">Inférence locale : Qwen3.8 27B et modèles denses remplacent l'appel API</h1>
+    <div style="font-size:13px;color:#666;margin-top:4px;">23 items retenus · 2 sources</div>
+  </div>
+
+  <!-- ===================== SECTION FAITS ===================== -->
+  <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:8px;">Les faits</div>
+
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">IA & Machine Learning</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://github.com/vllm-project/vllm/releases/tag/v0.27.0" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      vLLM v0.27.0 — support Kimi K3, PyTorch 2.13, FlashAttention 4
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#0c800c41ebf7b849</span>
+      · GitHub
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">vLLM, framework d'inférence pour LLM, sort sa v0.27.0 avec 561 commits. Les principaux apports : support complet du modèle Kimi K3 (kernels, quantization, fusion d'experts), intégration de PyTorch 2.13 et FlashAttention 4 avec support FP8 des KV caches, et optimisations DeepSeek-V4 (parallélisme de séquences, amélioration de latence jusqu'à 3,9%). Plusieurs nouveaux modèles (Qwen3.5, K-EXAONE-2.0) et backends sont aussi couverts.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://huggingface.co/Qwen/Qwen3.8-27B-FP8" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Qwen3.8 27B — modèle ouvert Alibaba
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#afb6d0b8250661bc</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Alibaba libère Qwen3.8 27B, un modèle dense 27 milliards de paramètres open source qui améliore la performance en coding, travail professionnel, recherche et tâches d'agents longues. Disponible en plusieurs variantes quantifiées (FP8), il offre une alternative open source compétitive aux modèles fermés pour des déploiements locaux.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://github.com/huggingface/transformers/releases/tag/v5.15.0" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Transformers v5.15.0 — Meta Muse Glimmer, GraniteMoeSWA, A.X-K1/K2
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#c35e6297db0ebef1</span>
+      · GitHub
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Hugging Face Transformers v5.15.0 ajoute le support de plusieurs nouveaux modèles : Meta Muse Glimmer (30B multimodal distillé, conçu pour des tâches d'agents), GraniteMoeSWA et GraniteSWA (architectures Granite), ainsi que A.X-K1 et A.X-K2. Cette version intègre aussi les mises à jour récentes de PyTorch et étend la couverture des modèles open source.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://github.com/ollama/ollama/releases/tag/v0.32.12" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Ollama v0.32.12 — intégration Qwen3.8 27B
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#757f42e5f21d76ba</span>
+      · GitHub
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Ollama ajoute le support de Qwen3.8 27B, un modèle open source qui améliore la performance en coding, recherche et tâches d'agents complexes. Pour les appareils Apple Silicon, une variante optimisée (qwen3.8:27b-mlx) est fournie pour maximiser la vitesse et la qualité de sortie, particulièrement adaptée aux tâches répétitives et aux agents de code.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://github.com/ollama/ollama/releases/tag/v0.32.11" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Ollama v0.32.11 — DeepSeek Harness, Muse Code, recherche web
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#f858ed7bf0493445</span>
+      · GitHub
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Ollama v0.32.11 étend l'écosystème d'agents avec le support de DeepSeek Harness (harnais d'agent open source) et Muse Code (CLI de coding agent par Meta). L'API compatible OpenAI gagne aussi la capacité de recherche web intégrée, renforçant les possibilités pour les applications agentic via Ollama.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Pourquoi Opus 5 semble-t-il plus difficile à utiliser ?
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#99bdd8b2cd62c807</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Un article analysant les difficultés rencontrées par les utilisateurs avec le modèle Opus 5 de Claude. L'auteur explore pourquoi ce modèle, malgré ses capacités, peut sembler moins intuitif ou performant que prévu dans certains contextes. Ce retour utilisateur enrichit la compréhension des compromis entre performance brute et expérience pratique des LLM.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://z.ai/blog/glm-5.3" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      GLM-5.3 : Capacités émergentes en cybersécurité et coding
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#e6c53596b4a80e81</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Présentation de GLM-5.3, un modèle de frontier AI capable de coding avec des compétences émergentes en cybersécurité. L'annonce souligne l'évolution des LLM au-delà de la génération de texte généraliste, vers des domaines techniques spécialisés critiques pour les développeurs et équipes infra.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Anthropic SDK Python v0.122.0 — output_behavior, corrections Bedrock
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#c6fa2cad51ac4b38</span>
+      · GitHub
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">L'SDK Python d'Anthropic v0.122.0 ajoute un paramètre `output_behavior` pour contrôler la création de stores mémoire (créer ou mettre à jour en place). Plusieurs corrections adressent Bedrock AWS (exécution SigV4 off-loop, exposition de nouvelles APIs) et améliore la gestion de fichiers PathLike et les échanges de tokens côté client.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Open Source & Tooling</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.biorxiv.org/content/10.64898/2026.08.09.738482v1?rss=1" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      PhaGAMeToo : workflow pour fusionner les annotations structurales et fonctionnelles de génomes de phages
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#aa371e45eec7aa1f</span>
+      · Biorxiv Bioinfo
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">PhaGAMeToo est un outil de ligne de commande qui automatise l'annotation et la fusion des génomes de phages en combinant les résultats de deux outils majeurs (Pharokka et VIBRANT). Il génère directement des fichiers GenBank prêts pour la soumission à des bases de données publiques, réduisant le travail manuel et l'erreur humaine. L'outil a été testé sur des génomes de phages de référence et sur des génomes récemment découverts issus de métagénomes environnementaux.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Systèmes & Infra</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Une station PBS risque de perdre 50 To de données après abandon par son fournisseur cloud
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#e2a6e77f6a8f7b62</span>
+      · Ars Technica
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Une station de télévision publique fait face à une perte potentielle de 50 To de données archivées après que son fournisseur cloud (Iron Mountain) a cessé de répondre et refuse l'accès aux serveurs. Cet incident souligne les risques critiques de dépendance à des fournisseurs tiers et l'absence de SLA clair sur les données essentielles.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Sécurité</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Google rend l'IA privée pratique avec le chiffrement homomorphe
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#ab1f720db0b9145d</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Google présente des avancées en chiffrement homomorphe pour l'IA, permettant d'exécuter des modèles sur des données chiffrées sans les déchiffrer. Cela résout un problème majeur de la vie privée : faire de l'inférence IA sans exposer les données sensibles à aucune tiers partie, ni même au service cloud.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Une vulnérabilité de partage d'écran macOS exploitée activement pour accès complet
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#b74725c02d4516dd</span>
+      · Ars Technica
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Une faille de sécurité critique dans le partage d'écran Mac permet à des attaquants distants de se connecter sans mot de passe, accordant le contrôle total de la machine. Cette vulnérabilité est actuellement exploitée en conditions réelles, constituant une menace immédiate pour les utilisateurs macOS.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Going Dark et l'ère du hacking par les forces de l'ordre
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#2aef493714926de9</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Article de cryptographie explorant les enjeux du chiffrement de bout en bout et l'accès des autorités aux données privées. Couvre la tension entre sécurité des utilisateurs et demandes gouvernementales de backdoors, un débat fondamental pour les technologies de communication moderne.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Construire un chemin pratique vers la cryptographie post-quantique
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#113e9eeeee7e3512</span>
+      · Mit Tech Review
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Analyse de la transition vers la cryptographie post-quantique (PQC) face à la menace des ordinateurs quantiques. L'article positionne PQC non comme une crise urgente mais comme une évolution maîtrisable pour les dirigeants d'entreprise, explicitant la nécessité de préparer dès maintenant les systèmes cryptographiques futurs.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://arstechnica.com/gadgets/2026/08/google-ordered-to-make-it-easier-to-download-alternative-android-app-stores/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Un juge donne une semaine à Google pour corriger le téléchargement « anticonc. » du Play Store
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#e01dece31e801d54</span>
+      · Ars Technica
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Suite à un jugement antitrust, Google doit modifier son Play Store en une semaine pour rendre les app stores tiers visibles et accessibles. Cette décision force l'ouverture du quasi-monopole de Google sur la distribution Android, favorisant la concurrence et le choix utilisateur.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Flock renforce ses règles face au recul de la surveillance
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#ce303cd37c5396d8</span>
+      · Mit Tech Review
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">La géante de la technologie policière Flock annonce des changements dans l'accès à son réseau national de lecteurs de plaques d'immatriculation, en réponse aux préoccupations croissantes sur la surveillance de masse et les abus policiers. Ces modifications visent à regagner des contrats perdus et à adresser les problèmes de transparence et d'abus.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Hardware & Chips</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Le plus gros avion tout électrique réussit son vol d'essai avec 5 dollars d'électricité
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#855e1413ec0efbfb</span>
+      · Ars Technica
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Un avion tout électrique record de taille a complété son vol d'essai avec un coût énergétique minime (5 dollars). L'initiative, soutenue par des compagnies aériennes, vise à développer un aéronef hybride-électrique commercial, illustrant la viabilité économique de l'électrification progressive de l'aviation.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Biotech & Sciences</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.biorxiv.org/content/10.64898/2026.08.09.743788v1?rss=1" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Prédire les fonctions biologiques en combinant les langages chimique et scientifique
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#05aa40eba5205b00</span>
+      · Biorxiv Bioinfo
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">PubCheF-1 est un modèle d'apprentissage profond qui prédit les propriétés biologiques des molécules directement à partir de leur structure chimique, en s'appuyant sur des descriptions tirées de la littérature scientifique. Cet approche unit deux domaines : la chimie (structure moléculaire) et le langage naturel (fonction décrite dans les articles). Le modèle a identifié avec succès de nouveaux inhibiteurs de béta-lactamases, y compris contre des variantes résistantes, et ces composés se sont montrés efficaces dans des modèles d'infection animale, ouvrant une voie accélérée pour la découverte de médicaments.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Le clonage pourrait sauver des espèces—ou créer des « sacs à organes »
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#4699e0646707b022</span>
+      · Mit Tech Review
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Des chercheurs ont développé une approche basée sur CRISPR permettant de transformer des embryons de souris mâles en femelles en supprimant le chromosome Y, créant ainsi des clones femelles génétiquement identiques aux mâles. Cette avancée ouvre des opportunités de conservation mais soulève des questions éthiques majeures sur les applications humaines potentielles.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Une scientifique aide à construire une cartographie manquante de l'enfance
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#47581de17fe41693</span>
+      · Mit Tech Review
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Portrait d'une chercheuse impliquée dans l'extension de l'Human Cell Atlas aux cellules de l'enfance. Le projet initial visait à cartographier chaque cellule du corps humain, mais la population pédiatrique avait été largement absente des efforts de mapping cellulaire—une lacune scientifique majeure en cours de colmatage.</div>
+    
+  </div>
+  
+  
+  <h2 style="font-size:16px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #e5e5e5;">Autre</h2>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Firefox, dernier grand navigateur supportant uBlock Origin
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#1895a92afc985df2</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Firefox reste le seul navigateur majeur compatible avec l'extension uBlock Origin sans restriction. Chrome, Edge et Safari ont implémenté des limitations via l'API Manifest V3, forçant un basculement vers des bloqueurs plus faibles. Cela laisse Firefox comme principal choix pour les utilisateurs qui veulent un blocage publicitaire sans compromis.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://rustdesk.com/blog/unattended-remote-access-wayland/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      RustDesk supporte l'accès distant sans surveillance sur Wayland
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#ac01be975ce90f48</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">RustDesk, outil d'accès distant open source, ajoute le support du mode sans surveillance (unattended) sur Wayland, le futur serveur d'affichage Linux. Cela permet une utilisation plus fluide et fiable du Bureau à distance sur les systèmes Wayland modernes, sans nécessiter une présence interactive.</div>
+    
+  </div>
+  
+  <div style="margin-bottom:16px;">
+    <a href="https://heyjonny.dev/posts/rss-to-eink-newspaper/" style="color:#1a1a1a;text-decoration:none;font-weight:600;font-size:15px;line-height:1.35;">
+      Transformer les feeds RSS en journal e-ink pour réduire la consommation téléphone
+    </a>
+    <div style="font-size:11px;color:#999;margin:2px 0 4px;">
+      <span style="font-family:ui-monospace,SFMono-Regular,monospace;background:#f0f0ee;padding:1px 5px;border-radius:3px;">#7d636521da361719</span>
+      · Hn Frontpage
+    </div>
+    
+    <div style="font-size:13px;color:#444;line-height:1.5;">Un projet personnel convertissant les flux RSS en journal au format e-ink, affiché sur un appareil papier électronique. L'objectif : briser la dépendance à la lecture sur téléphone en offrant une expérience matérielle alternatif moins addictive, tout en gardant accès à l'actualité personnalisée.</div>
+    
+  </div>
+  
+  
+
+  <!-- ===================== SECTION ANALYSE ===================== -->
+  <div style="margin-top:48px;padding:24px;background:#faf9f5;border-left:3px solid #1a1a1a;">
+    <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:12px;">Point de vue IA · mémoire de l'année</div>
+    <div style="font-size:14px;line-height:1.65;color:#1a1a1a;">
+      <p style='margin:0 0 14px;'>Semaine calme côté drame, dense côté plomberie. La course à l'inférence continue son rythme de croisière : vLLM sort sa v0.27.0 avec support Kimi K3 et FlashAttention 4 <a href="https://github.com/vllm-project/vllm/releases/tag/v0.27.0" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#0c800c41ebf7b849]</a>, Transformers embarque Meta Muse Glimmer et les familles Granite <a href="https://github.com/huggingface/transformers/releases/tag/v5.15.0" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#c35e6297db0ebef1]</a>, et Ollama enchaîne deux releases coup sur coup pour intégrer Qwen3.8 27B et des agents de coding comme DeepSeek Harness ou Muse Code <a href="https://github.com/ollama/ollama/releases/tag/v0.32.12" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#757f42e5f21d76ba]</a><a href="https://github.com/ollama/ollama/releases/tag/v0.32.11" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#f858ed7bf0493445]</a>. Qwen3.8 27B en particulier confirme la tendance notée en W31 sur l'inférence frugale — un modèle dense compétitif en coding et agents, dispo en FP8 pour du déploiement local <a href="https://huggingface.co/Qwen/Qwen3.8-27B-FP8" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#afb6d0b8250661bc]</a>. Ce qui est plus intéressant, c'est le contrepoint : pendant que GLM-5.3 revendique des capacités émergentes en cybersécurité <a href="https://z.ai/blog/glm-5.3" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#e6c53596b4a80e81]</a>, un retour terrain souligne qu'Opus 5, malgré ses specs, semble plus dur à utiliser en pratique <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#99bdd8b2cd62c807]</a>. La capacité brute continue d'avancer plus vite que l'expérience réelle — un thème qu'on sent revenir édition après édition sans vraiment se résoudre.</p>
+<p style='margin:0 0 14px;'>Côté sécurité, on quitte le registre "IA qui attaque" des semaines W31-W32 pour retrouver des problèmes très classiques : une faille de partage d'écran macOS activement exploitée pour prise de contrôle totale sans mot de passe <a href="https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#b74725c02d4516dd]</a>, et un juge qui donne une semaine à Google pour ouvrir le Play Store aux stores tiers <a href="https://arstechnica.com/gadgets/2026/08/google-ordered-to-make-it-easier-to-download-alternative-android-app-stores/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#e01dece31e801d54]</a> — la pression antitrust se traduit enfin en délais concrets. En toile de fond, la cryptographie redevient centrale : Google avance sur le chiffrement homomorphe pour faire tourner de l'IA sur données chiffrées <a href="https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#ab1f720db0b9145d]</a>, pendant qu'un article rappelle que la PQC doit se traiter comme un chantier d'ingénierie et non une urgence <a href="https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#113e9eeeee7e3512]</a>, en écho direct au débat "going dark" sur le chiffrement de bout en bout <a href="https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#2aef493714926de9]</a>. Trois angles, une même question : qui contrôle l'accès aux données, et sous quelle contrainte légale.</p>
+<p style='margin:0 0 14px;'>Enfin, la bio confirme la dynamique vue en W30 : extension pédiatrique de l'Human Cell Atlas <a href="https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#47581de17fe41693]</a>, PubCheF-1 qui relie structure moléculaire et littérature scientifique pour trouver de nouveaux inhibiteurs <a href="https://www.biorxiv.org/content/10.64898/2026.08.09.743788v1?rss=1" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#05aa40eba5205b00]</a>, et un outil d'annotation de phages qui automatise un travail jusqu'ici manuel <a href="https://www.biorxiv.org/content/10.64898/2026.08.09.738482v1?rss=1" style="color:#0055aa;text-decoration:none;font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;">[#aa371e45eec7aa1f]</a>. L'infra bio-informatique continue de mûrir en silence, loin du bruit des LLM.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;padding-top:20px;border-top:1px solid #e5e5e5;font-size:11px;color:#888;text-align:center;">
+    Newsletter générée automatiquement · 2026-08-15 07:22 UTC<br>
+    Section « Point de vue IA » = éditorial, opinions marquées. Section « Faits » = 100% sourcée.
+  </div>
+
+</div>
+</body>
+</html>
